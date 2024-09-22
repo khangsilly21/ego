@@ -64,7 +64,7 @@ const resetDiemDanh = async () => {
 
   const updateCarState = (newState) => {
     axios
-      .put(`http://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}`, { state: newState })
+      .put(`https://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}`, { state: newState })
       .then((response) => {
         console.log('Trạng thái xe được cập nhật:', response.data);
         const updatedCars = cars.map((car) =>
@@ -91,7 +91,7 @@ const resetDiemDanh = async () => {
     }
     const checkinTime = new Date().toLocaleTimeString();
     axios
-      .put(`http://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}/students/${studentId}`, { checkinTime })
+      .put(`https://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}/students/${studentId}`, { checkinTime })
       .then((response) => {
         const updatedStudents = students.map((student) =>
           student.stt === studentId ? { ...student, checkinTime } : student
@@ -128,7 +128,7 @@ const resetDiemDanh = async () => {
 
     // Gửi yêu cầu cập nhật trạng thái xin nghỉ về server
     axios
-      .put(`http://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}/students/${studentId}`, { absent })
+      .put(`https://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}/students/${studentId}`, { absent })
       .then((response) => {
         const updatedStudents = students.map((student) =>
           student.stt === studentId ? { ...student, absent } : student
@@ -165,7 +165,7 @@ const resetDiemDanh = async () => {
 
     const checkoutTime = new Date().toLocaleTimeString();
     axios
-      .put(`http://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}/students/${studentId}`, { checkoutTime })
+      .put(`https://pavv-556d4b716834.herokuapp.com/cars/${cars[carIndex].id}/students/${studentId}`, { checkoutTime })
       .then((response) => {
         const updatedStudents = students.map((student) =>
           student.stt === studentId ? { ...student, checkoutTime } : student

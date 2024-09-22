@@ -26,7 +26,7 @@ const Car1 = ()=>{
     useEffect(() => {
       const fetchCars = async () => {
         try {
-          const response = await axios.get('http://pavv-556d4b716834.herokuapp.com/cars');
+          const response = await axios.get('https://pavv-556d4b716834.herokuapp.com/cars');
           setCars(response.data);
         } catch (error) {
           console.error('Error fetching cars:', error);
