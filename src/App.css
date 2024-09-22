@@ -151,7 +151,7 @@
 }
 
 .box1 .row1 .unbold{
-    color:#acacaa;
+  color:#8d93ae;
 }
 
 .box1 .row2{
@@ -871,22 +871,7 @@
     font-size: 1.3rem;
   }
 
-  .diemdanh table{
-     color:rgb(101, 2, 2);
-    box-shadow: #d5c0ef 10px 20px 40px -20px, #f5888f 10px 0px 30px -10px, #fc8c93 0px -2px 8px 4px inset;
-    width: 80%;
-    margin: 0 auto;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #F3FBF2;
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 1300px;
-    z-index: 1000;
-    display: flex;
-  }
+  
 
    table{
     overflow: auto;
@@ -1072,19 +1057,38 @@
   
  
 }
+.diemdanh table{
+  color:rgb(101, 2, 2);
+ box-shadow: #d5c0ef 10px 20px 40px -20px, #f5888f 10px 0px 30px -10px, #fc8c93 0px -2px 8px 4px inset;
+ width: 80%;
+ margin: 10px auto;
+ position: absolute;
+ top: 75%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: #F3FBF2;
+ padding: 20px;
+ border-radius: 10px;
+ min-width: 1260px;
+ 
+ z-index: 1000;
+ display: flex;
+}
 
 .diemdanh .resetButton{
   background-color: #74aced; /* Green */
   position: absolute;
-top:110%;
+top:120%;
 border: none;
 color: rgb(245, 239, 243);
-padding: 15px 15px;
+padding: 18px 22px;
 text-align: center;
 text-decoration: none;
 cursor: pointer;
 font-size: 16px;
 width: 100px;
+z-index: 1001;
+padding-bottom: 23px;
 
 
 border-radius: 10px;
@@ -1092,7 +1096,7 @@ font-size: 1.2rem;
 width: 6%;
 height: 2%;
 left: 47%;
-right: 50%;
+
 
 
 
@@ -1188,7 +1192,7 @@ right: 50%;
     }
     
     .box1 .row1 .unbold{
-        color:#e0f8e7;
+        color:#8d93ae;
     }
     
     .box1 .row2{
