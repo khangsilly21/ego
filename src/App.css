@@ -877,7 +877,7 @@
     width: 80%;
     margin: 0 auto;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #F3FBF2;
@@ -1075,17 +1075,26 @@
 
 .diemdanh .resetButton{
   background-color: #74aced; /* Green */
+  position: absolute;
+top:110%;
 border: none;
 color: rgb(245, 239, 243);
-padding: 15px 20px;
+padding: 15px 15px;
 text-align: center;
 text-decoration: none;
 cursor: pointer;
 font-size: 16px;
 width: 100px;
-margin: 30px auto;
+
+
 border-radius: 10px;
 font-size: 1.2rem;
+width: 6%;
+height: 2%;
+left: 47%;
+right: 50%;
+
+
 
 }
 
