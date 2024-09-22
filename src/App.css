@@ -872,13 +872,24 @@
   }
 
   .diemdanh table{
-    color:rgb(101, 2, 2);
-    box-shadow: #d5c0ef 10px 50px 100px -20px, #f5888f 10px 0px 30px -10px, #fc8c93 0px -2px 8px 4px inset;
-    width: 90%;
+     color:rgb(101, 2, 2);
+    box-shadow: #d5c0ef 10px 20px 40px -20px, #f5888f 10px 0px 30px -10px, #fc8c93 0px -2px 8px 4px inset;
+    width: 80%;
     margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3FBF2;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 1300px;
+    z-index: 1000;
+    display: flex;
   }
 
    table{
+    overflow: auto;
     table-layout: fixed; 
     padding:10px;
     display: flex;
@@ -1155,6 +1166,8 @@ font-size: 1.2rem;
 
 /* Media query for small screen */
 @media screen and (max-width:1020px){
+
+    
     .rightNav{
         display:none;
     }
