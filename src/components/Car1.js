@@ -12,7 +12,7 @@ const Car1 = ()=>{
     const [loading, setLoading] = useState(true);
   
     // Kết nối với WebSocket server
-    const { sendMessage, lastMessage } = useWebSocket('ws://pavv-556d4b716834.herokuapp.com', {
+    const { sendMessage, lastMessage } = useWebSocket('wss://pavv-556d4b716834.herokuapp.com', {
       onOpen: () => console.log('WebSocket kết nối thành công'),
       onMessage: (message) => {
         const data = JSON.parse(message.data);
