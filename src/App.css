@@ -861,14 +861,35 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
-    color: #2d6e43;
+    color: #6d4984;
     align-items: baseline;
-    padding:10px
+    padding:20px
   }
 
   .overlayContainer .danhsachhocsinh h1 span{
     color:#0f1210;
     font-size: 1.3rem;
+  }
+
+  .danhsachhocsinh table{
+    
+    overflow: auto;
+    table-layout: fixed; 
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .danhsachhocsinh table th:nth-child(2), .danhsachhocsinh table td:nth-child(2){
+    width: 25%;
+  }
+
+  .danhsachhocsinh table th:nth-child(3), .danhsachhocsinh table td:nth-child(3){
+    width: 10%;
   }
 
   
@@ -907,13 +928,9 @@
     background-color: #f3f3f3;
   }
 
- th:nth-child(1), td:nth-child(1){
-    width:10%;
-  }
 
-  th:nth-child(2), td:nth-child(2){
-    width:15%;
-  }
+ 
+  
 
   .overlay .sidebar{
     font-family:Arial, Helvetica, sans-serif;
