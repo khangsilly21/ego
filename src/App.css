@@ -892,6 +892,10 @@
     width: 10%;
   }
 
+  .danhsachhocsinh table th:first-child, .danhsachhocsinh table td:first-child{
+    width: 9%;
+  }
+
   
 
    table{
