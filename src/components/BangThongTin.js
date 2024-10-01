@@ -41,7 +41,7 @@ const BangThongTin = (props)=>{
                 <div key={car.id} className="sidebar">
                   <h2>Thông tin chi tiết</h2>
                   <p><span>Bác tài: </span>Nguyễn Văn B</p>
-                  <p><span>Địa điểm đón:</span>{car.places.forEach((x=><span>x</span>))}</p>
+                  <p style={{lineHeight:"1.5rem"}}><span>Địa điểm đón:</span> {car.places.map((place,index)=><div key={index}>{place}, </div>)}</p>
                   <p><span>Số điện thoại liên lạc: </span>0376756456</p>
                   <p><span>Số học sinh:</span> {car.numberStudent}</p>
                   <p><span>Số học sinh trên xe:</span> <span style={{color:car.students.filter(student => student.checkinTime && !student.checkoutTime).length==0?'black':'green'}}>{car.students.filter(student => student.checkinTime && !student.checkoutTime).length}</span>/{car.numberStudent}</p>
